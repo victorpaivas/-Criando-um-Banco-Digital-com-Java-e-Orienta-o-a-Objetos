@@ -1,44 +1,25 @@
-usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           [--config-env=<name>=<envvar>] <command> [<args>]
 
-These are common Git commands used in various situations:
+# Desafio: Banco Digital - Reforço em POO com Java
+### Descrição do Desafio
+Este desafio foi criado com o intuito de reforçar o conhecimento em Programação Orientada a Objetos (POO) em Java, proporcionando uma experiência prática e interativa. No contexto bancário, exploramos os pilares da orientação a objetos através da implementação de um banco digital.
 
-start a working area (see also: git help tutorial)
-   clone     Clone a repository into a new directory
-   init      Create an empty Git repository or reinitialize an existing one
+### Objetivo
+O objetivo deste projeto prático hands-on é consolidar o entendimento em Programação Orientada a Objetos (POO) em Java, por meio da construção de um banco digital.
 
-work on the current change (see also: git help everyday)
-   add       Add file contents to the index
-   mv        Move or rename a file, a directory, or a symlink
-   restore   Restore working tree files
-   rm        Remove files from the working tree and from the index
+### Descrição
+Neste projeto, disponibilizei no GitHub um projeto de referência que utiliza os conceitos de POO e Java para criar um banco digital. Explorei o contexto bancário para elucidar os pilares da orientação a objetos, permitindo que os participantes reproduzam a solução e desenvolvam sua capacidade de abstração.
 
-examine the history and state (see also: git help revisions)
-   bisect    Use binary search to find the commit that introduced a bug
-   diff      Show changes between commits, commit and working tree, etc
-   grep      Print lines matching a pattern
-   log       Show commit logs
-   show      Show various types of objects
-   status    Show the working tree status
+## Como Utilizar Este Repositório
+Clone este repositório em sua máquina local.
+Abra o projeto em sua IDE Java preferida.
+Explore a estrutura do projeto e os conceitos de POO utilizados.
+Execute a aplicação e teste as funcionalidades do banco digital.
+Caso queira aprimorar o projeto, sinta-se à vontade para implementar suas próprias evoluções e melhorias.
+Estrutura do Projeto
+O projeto está organizado da seguinte forma:
 
-grow, mark and tweak your common history
-   branch    List, create, or delete branches
-   commit    Record changes to the repository
-   merge     Join two or more development histories together
-   rebase    Reapply commits on top of another base tip
-   reset     Reset current HEAD to the specified state
-   switch    Switch branches
-   tag       Create, list, delete or verify a tag object signed with GPG
+#### src/: Contém o código-fonte da aplicação Java.
+#### README.md: Este arquivo, contendo informações sobre o projeto e sua utilização.
 
-collaborate (see also: git help workflows)
-   fetch     Download objects and refs from another repository
-   pull      Fetch from and integrate with another repository or a local branch
-   push      Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+### Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues relatando problemas ou sugerindo novas funcionalidades. Você também pode enviar pull requests com suas contribuições para melhorar este projeto.
