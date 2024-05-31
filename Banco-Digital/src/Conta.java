@@ -1,18 +1,19 @@
 public abstract class Conta implements iConta {
 
-    private static final int AGENCIA_PADRAO = 6466;
-
-    private static int SEQUENCIAL = 1;
-
-    public Conta() {
-        this.agencia = AGENCIA_PADRAO;
-        this.numero = SEQUENCIAL++;
-    }
-
     protected int numero;
     protected int agencia;
     protected double saldo;
-    private Cliente cliente;
+    protected Cliente cliente;
+
+    private static final int AGENCIA_PADRAO = 1;
+
+    private static int SEQUENCIAL = 1;
+
+    public Conta(Cliente cliente) {
+        this.agencia = AGENCIA_PADRAO;
+        this.numero = SEQUENCIAL++;
+        this.cliente = cliente;
+    }
 
     @Override
     public void sacar(double valor) {
@@ -68,9 +69,12 @@ public abstract class Conta implements iConta {
     }
 
     protected void imprimeInfoConta() {
+        System.out.println(String.format("Nome: %s", this.cliente.nome));
+        System.out.println(String.format("CPF: %s", this.cliente.cpf));
         System.out.println(String.format("Agencia: %d", this.agencia));
         System.out.println(String.format("Numero: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
+
     }
 
 

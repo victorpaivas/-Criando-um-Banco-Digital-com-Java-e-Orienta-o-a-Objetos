@@ -2,21 +2,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Conta contaCorrente = new ContaCorrente();
-        Conta contaPoupanca = new ContaPoupanca();
+        Cliente victor = new Cliente();
+        victor.setNome("Victor");
+        victor.setCpf("333.333.333-00");
+        Cliente jose = new Cliente();
 
-        contaCorrente.imprimirExtrato();
-        contaCorrente.depositar(150.26);
+        Conta cc1 = new ContaCorrente(victor);
+        Conta cp2 = new ContaPoupanca(jose);
+
+        cc1.imprimirExtrato();
+        cc1.depositar(350.00);
         System.out.println();
-        contaCorrente.imprimirExtrato();
-        System.out.println();
-        contaPoupanca.imprimirExtrato();
-        contaCorrente.transferir(150, contaPoupanca);
-        System.out.println();
-        contaCorrente.imprimirExtrato();
-        System.out.println();
-        contaPoupanca.imprimirExtrato();
-        contaCorrente.sacar(20);
+
 
     }
 }
